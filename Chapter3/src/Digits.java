@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 /*
 
-Program: Digits.java          Last Date of this Revision: February 22 2022
+Program: Digits.java          Last Date of this Revision: February 22 2022 
 
 Purpose: Create an application to show the number in the places of a 3 digit number
 
