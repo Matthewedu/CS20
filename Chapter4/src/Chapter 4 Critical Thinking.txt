@@ -1,0 +1,27 @@
+﻿Chapter 4 Critical Thinking
+1. a)if (grade>=90){ System.out.println(“Great Job”);}
+b)if (number<20 && number>50) {System.out.println(“Error”);}
+c)if (y<100){y+2}
+2. if( num1 > num2) {
+System.out.printIn( “First number is larger”);
+} else if( num2 > num1) {
+System.out.printIn( “Second number is larger”);
+} else {
+System.out.printIn( “Numbers are equal”);
+3. a) Even, Odd
+b) X= (num % 2);
+switch (X) {
+Case 0: System.out.printIn (“Even Number”); break;
+default: System.out.println("Odd Number"); break;
+}
+4. a) (int)(50*Math.random()+1);
+b)(int)(81*Math.random()+20);
+c)(int)((20-10)*Math.random()+10)
+5. If your age is 18 or 65, it won’t give you a message because there is no equals points for those ages, it should be (age>=18)- Adult and (age>=65)-Senior
+6. a)true
+b)false
+c)true
+d)true
+e)true
+f)true
+g)true
