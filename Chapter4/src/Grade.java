@@ -40,13 +40,16 @@ public class Grade
 		{
 		System.out.println("The corresponding grade: B");	
 		}
-		else if (90 <= p && p <= 100) 
+		else if (90 <= p && p <= 94) 
 		{
-		System.out.println("The corresponding grade: D");	
+		System.out.println("The corresponding grade: A");	
+		} else if (95 <= p && p <= 100) 
+		{
+		System.out.println("The corresponding grade: A+");
 		}
 		else 
 		{
-			System.out.println("Invalid Responce");
+			System.out.println("Invalid grade inputted");
 		}
 	
 
@@ -59,8 +62,8 @@ public class Grade
 Enter the percentage: 67
 The corresponding grade: D
 
-Enter the percentage: 89
-The corresponding grade: B
+Enter the percentage: 100
+The corresponding grade: A+
 
 Enter the percentage: 25
 The corresponding grade: F
