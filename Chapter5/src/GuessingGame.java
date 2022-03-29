@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 Program: GuessingGame.java          Last Date of this Revision: March 16 2022
 
-Purpose: Ask the user to guess a number between 1 and 20, they input a number until its correct.
+Purpose:Ask the user to guess a number between 1 and 20, they input a number until its correct.
 
 Author: Matthew Pierson, 
 School: CHHS
