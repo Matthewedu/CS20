@@ -4,19 +4,19 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
 import javax.swing.JTextField;
-import java.awt.Font;
-import java.util.Scanner;
-
-import javax.swing.SwingConstants;
-import javax.swing.DropMode;
 import java.awt.Color;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import java.awt.Font;
 
 public class PrimeNumber extends JFrame {
 
 	private JPanel contentPane;
-	private JTextField txtTypeANumber;
-	private JTextField textField;
+	private JTextField txtNumber;
+	private JButton btnNewButton;
 
 	/**
 	 * Launch the application.
@@ -42,30 +42,63 @@ public class PrimeNumber extends JFrame {
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
-		contentPane.setLayout(null);
 		
 		JPanel panel = new JPanel();
-		panel.setBackground(Color.GRAY);
-		panel.setBounds(5, 5, 424, 251);
-		contentPane.add(panel);
+		contentPane.add(panel, BorderLayout.CENTER);
 		panel.setLayout(null);
 		
-		txtTypeANumber = new JTextField();
-		txtTypeANumber.setBounds(100, 52, 219, 56);
-		txtTypeANumber.setBackground(Color.LIGHT_GRAY);
-		txtTypeANumber.setDropMode(DropMode.ON);
-		txtTypeANumber.setHorizontalAlignment(SwingConstants.CENTER);
-		txtTypeANumber.setFont(new Font("Tahoma", Font.BOLD, 20));
-		txtTypeANumber.setText(" Type a Number:");
-		panel.add(txtTypeANumber);
-		txtTypeANumber.setColumns(10);
+		JLabel lblNewLabel = new JLabel("Enter A Number:");
+		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		lblNewLabel.setBounds(23, 84, 93, 28);
+		panel.add(lblNewLabel);
 		
-		Scanner input = new Scanner(System.in);
-		textField = new JTextField();
-		int num =input.nextInt();
-		textField.setBounds(150, 134, 124, 50);
-		panel.add(textField);
-		textField.setColumns(10);
+		txtNumber = new JTextField();
+		txtNumber.setForeground(Color.BLACK);
+		txtNumber.setBounds(127, 88, 188, 20);
+		panel.add(txtNumber);
+		txtNumber.setColumns(10);
+		
+		JLabel newlabel= new JLabel("");
+		newlabel.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		newlabel.setBounds(23, 120, 206, 20);
+		panel.add(newlabel);
+		
+		
+		btnNewButton = new JButton("Enter");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String num= txtNumber.getText(); 
+			
+				int num1 = Integer.parseInt(num);
+				 
+				
+				boolean test = false;
+				for (int i=2; i<=(num1/2);i++) {
+					
+					if(num1 % i ==0) {
+						test =true;
+						break;
+					}
+					
+				}
+				if (!test) {
+				newlabel.setText("This Is A Prime Number!");
+				}else {
+				newlabel.setText("This Is Not A Prime Number!");
+				}
+				
+				
+				
+			}
+
+			
+			
+		});
+		btnNewButton.setBounds(325, 87, 89, 23);
+		panel.add(btnNewButton);
+		
+		
 	}
 }
