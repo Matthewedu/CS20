@@ -1,0 +1,9 @@
+2. Method declaration is the first line of the method that contains the method name and the method body has the statements that implement a method.
+3. Access modifier
+4. Visibility
+5. var1 is declared in main. Varl2 is declared in main() for statement. Var3 is declared in method1(). Var4 is declared in method1() for statement.
+6. a)public static int getVowels(String m)
+   b)public static int extractDigit(int m)
+   c)public static String insertString(int l, String w)
+7. a)By number, type, and order of parameters
+   b)Yes. Only if the compiler can distinguish the methods with parameters.

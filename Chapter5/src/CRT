@@ -1,0 +1,15 @@
+CRT
+1. The purpose of a loop structure is to continuously run a program based on a condition
+2. A while statement evaluates the condition before the function is run. A do-while statement evaluates the condition after the first run of a loop.
+3. Prompter review exercise
+4. a) a loop that runs forever
+   b)syntax error(input incorrect type) and logic error(always remain true)
+   c)Not enough bits to store a number
+5. 60
+6. It will never become an infinite loop
+7. Counters: keeping track of the number of times a user enters a value or a password. It increments by the same amount every time.
+   Accumulators: Useful for summing totals or keeping track of varying totals. It increments by a varying amount every time the program is executed.
+8.For (int i=3; i<=10;i++){
+  Total +=i;
+ }
+9. # of times you want to use the loop and whether it should be ran at least once.
