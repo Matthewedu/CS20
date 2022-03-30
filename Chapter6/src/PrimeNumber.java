@@ -1,3 +1,15 @@
+/*
+
+Program: PrimeNumber.java          Last Date of this Revision: March 29 2022
+
+Purpose: Ask the user for a number then tell them if its prime or not.
+
+Author: Matthew Pierson, 
+School: CHHS
+Course: Computer Programming 20
+ 
+
+*/
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
@@ -50,19 +62,19 @@ public class PrimeNumber extends JFrame {
 		panel.setLayout(null);
 		
 		JLabel lblNewLabel = new JLabel("Enter A Number:");
-		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		lblNewLabel.setBounds(23, 84, 93, 28);
+		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblNewLabel.setBounds(10, 82, 158, 37);
 		panel.add(lblNewLabel);
 		
 		txtNumber = new JTextField();
 		txtNumber.setForeground(Color.BLACK);
-		txtNumber.setBounds(127, 88, 188, 20);
+		txtNumber.setBounds(167, 82, 127, 37);
 		panel.add(txtNumber);
 		txtNumber.setColumns(10);
 		
 		JLabel newlabel= new JLabel("");
-		newlabel.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		newlabel.setBounds(23, 120, 206, 20);
+		newlabel.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		newlabel.setBounds(10, 126, 284, 37);
 		panel.add(newlabel);
 		
 		
@@ -96,7 +108,7 @@ public class PrimeNumber extends JFrame {
 			
 			
 		});
-		btnNewButton.setBounds(325, 87, 89, 23);
+		btnNewButton.setBounds(315, 82, 99, 37);
 		panel.add(btnNewButton);
 		
 		
