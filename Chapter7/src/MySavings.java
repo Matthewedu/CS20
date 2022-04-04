@@ -1,4 +1,15 @@
-import java.awt.BorderLayout;
+/*
+
+Program: MySavings.java          Last Date of this Revision: April 4 2022
+
+Purpose: Ask the user for a number then tell them if its prime or not.
+
+Author: Matthew Pierson, 
+School: CHHS
+Course: Computer Programming 20
+ 
+
+*/import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
