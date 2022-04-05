@@ -1,8 +1,9 @@
 /*
 
-Program: MySavings.java          Last Date of this Revision: April 4 2022
+Program: MySavings.java          Last Date of this Revision: April 5 2022
 
-Purpose: Ask the user for a number then tell them if its prime or not.
+Purpose: Create an application that displays the users total amount with options to 
+remove or add pennies, nickels, dimes, quarters, and dollars.
 
 Author: Matthew Pierson, 
 School: CHHS
