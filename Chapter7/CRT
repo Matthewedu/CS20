@@ -1,0 +1,15 @@
+CRT
+1.Radius and PI
+2.The constructor must have the same name as the class
+3.Private- Visible to the class but not to the client code
+  Public-Visible to the client code
+4.Invalid because the radius is private and cannot be accessed by client code
+5.a) Roo
+  b)x
+  c)getX()
+  d)setX()
+  e)factor()
+  f)Roo
+  g)Four
+6.Class-Data type that defines variables for the object and methods for its behavior
+  Object-Instance of a class (there can be many objects for the same class)
