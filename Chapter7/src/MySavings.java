@@ -48,6 +48,11 @@ public class MySavings extends JFrame {
 		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
 		
+		JPanel panel = new JPanel();
+		contentPane.add(panel, BorderLayout.CENTER);
+		panel.setLayout(null);
+		
+		
 		
 	}
 
