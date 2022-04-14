@@ -25,17 +25,18 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.JScrollBar;
+import javax.swing.JSpinner;
 
 public class MySavings extends JFrame {
 
 	private JPanel contentPane;
 
-	int q;
-	int n;
-	int d;
-	int p;
+	String q;
+	String d;
+	String n;
+	String p;
 	
-
 	
 	/**
 	 * Launch the application.
@@ -64,10 +65,6 @@ public class MySavings extends JFrame {
 		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
 		
-		/*JFrame Frame = new JFrame();
-		String message = JOptionPane.showInputDialog(Frame, "Enter your First and Last name:");
-		JOptionPane.showMessageDialog(Frame, "Your message: "+message);*/
-		
 		JPanel panel = new JPanel();
 		
 		contentPane.add(panel, BorderLayout.CENTER);
@@ -75,70 +72,112 @@ public class MySavings extends JFrame {
 		
 		JLabel ql = new JLabel("Quarters:");
 		ql.setFont(new Font("Tahoma", Font.BOLD, 20));
-		ql.setBounds(25, 50, 100,20);
+		ql.setBounds(5, 25, 100,20);
 		panel.add(ql);
 		
 		JTextField qt = new JTextField();
 		qt.setForeground(Color.BLACK);
-		qt.setBounds(105,50, 90, 20);
+		qt.setBounds(27,50, 50, 20);
 		panel.add(qt);
 		
 		JLabel dl = new JLabel("Dimes:");
 		dl.setFont(new Font("Tahoma", Font.BOLD, 20));
-		dl.setBounds(25, 75, 100,20);
+		dl.setBounds(115, 25, 100,20);
 		panel.add(dl);
 		
 		JTextField dt = new JTextField();
 		dt.setForeground(Color.BLACK);
-		dt.setBounds(120, 75, 90, 20);
+		dt.setBounds(125, 50, 50, 20);
 		panel.add(dt);
 		
 		JLabel nl = new JLabel("Nickels:");
 		nl.setFont(new Font("Tahoma", Font.BOLD, 20));
-		nl.setBounds(25, 100, 100,20);
+		nl.setBounds(205, 25, 100,20);
 		panel.add(nl);
 		
 		JTextField nt = new JTextField();
 		nt.setForeground(Color.BLACK);
-		nt.setBounds(105, 100, 90, 20);
+		nt.setBounds(215, 50, 50, 20);
 		panel.add(nt);
 		
 		JLabel pl = new JLabel("Pennies:");
 		pl.setFont(new Font("Tahoma", Font.BOLD, 20));
-		pl.setBounds(25, 125, 100,20);
+		pl.setBounds(305, 25, 100,20);
 		panel.add(pl);
 		
 		JTextField pt = new JTextField();
 		pt.setForeground(Color.BLACK);
-		pt.setBounds(105, 125, 90, 20);
+		pt.setBounds(325, 50, 50, 20);
 		panel.add(pt);
 		
 		JLabel total = new JLabel("Total:");
 		total.setFont(new Font("Tahoma", Font.BOLD, 30));
-		total.setBounds(300, 50, 100,70);
+		total.setBounds(40, 107, 100,70);
 		panel.add(total);
 		
-		JLabel display = new JLabel("0.00");
-		display.setFont(new Font("Tahoma", Font.BOLD, 30));
-		display.setBounds(300, 80, 100,70);
-		panel.add(display);
+		JLabel num = new JLabel("0.00");
+		num.setFont(new Font("Tahoma", Font.BOLD, 30));
+		num.setBounds(40, 156, 100,70);
+		panel.add(num);
 		
-		/*JButton btnNewButton = new JButton("Enter");
-		btnNewButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) 
-			{
-				String Q = qt.getText();
-				double Q2 = Double.parseDouble(Q);
-				double Total = Q2 +2;
+		
+		JButton add = new JButton("Add");
+		add.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String q = qt.getText();
+				String d = dt.getText();
+				String n = nt.getText();
+				String p = pt.getText();
 				
-				display.setText("Quarters: "+ Total);
+				Double qn = Double.parseDouble(q);
+				Double dn = Double.parseDouble(d);
+				Double nn = Double.parseDouble(n);
+				Double pn = Double.parseDouble(p);
 				
+				Double tqn = qn*0.25;
+				Double tdn = dn*0.10;
+				Double tnn = nn*0.05;
+				Double tpn = pn*0.01;
+				
+				Double total= tqn+tdn+tnn+tpn;
+				String totals = Double.toString(total);
+				
+				num.setText(totals);
+			}
+		});
+		add.setBounds(309, 129, 89, 43);
+		panel.add(add);
+		
+		
+		JButton remove = new JButton("Remove");
+		remove.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String q = qt.getText();
+				String d = dt.getText();
+				String n = nt.getText();
+				String p = pt.getText();
+				
+				Double qn = Double.parseDouble(q);
+				Double dn = Double.parseDouble(d);
+				Double nn = Double.parseDouble(n);
+				Double pn = Double.parseDouble(p);
+				
+				Double tqn = qn*0.25;
+				Double tdn = dn*0.10;
+				Double tnn = nn*0.05;
+				Double tpn = pn*0.01;
+				
+				Double total= tqn+tdn+tnn+tpn;
+				String totals = Double.toString(total);
 				
 				
 			}
+			
 		});
-		btnNewButton.setBounds(193, 151, 119, 23);
-		panel.add(btnNewButton);*/
+		remove.setBounds(209, 129, 89, 43);
+		panel.add(remove);
+		
+		
 		
 		
 		
