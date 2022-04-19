@@ -177,9 +177,14 @@ public class MySavings extends JFrame {
 				Double tnn = nn*0.05;
 				Double tpn = pn*0.01;
 				
-				Double total= tqn+tdn+tnn+tpn;
-				String totals = Double.toString(total);
+				Total= Total-tqn-tdn-tnn-tpn;
+				String totals="$"+roundOffTo2DecPlaces(Total);
 				
+				num.setText(totals);
+				qt.setText("0");
+				dt.setText("0");
+				nt.setText("0");
+				pt.setText("0");
 				
 			}
 			
