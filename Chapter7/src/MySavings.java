@@ -1,6 +1,6 @@
 /*
 
-Program: MySavings.java          Last Date of this Revision: April 7 2022
+Program: MySavings.java          Last Date of this Revision: April 19 2022
 
 Purpose: Create an application that displays the users total amount with options to 
 remove or add pennies, nickels, dimes, and quarters.
