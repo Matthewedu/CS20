@@ -3,7 +3,7 @@
 Program: MySavings.java          Last Date of this Revision: April 7 2022
 
 Purpose: Create an application that displays the users total amount with options to 
-remove or add pennies, nickels, dimes, quarters, and dollars.
+remove or add pennies, nickels, dimes, and quarters.
 
 Author: Matthew Pierson, 
 School: CHHS
@@ -31,7 +31,7 @@ import javax.swing.JSpinner;
 public class MySavings extends JFrame {
 
 	private JPanel contentPane;
-
+	private Double Total=0.0;
 	String q;
 	String d;
 	String n;
@@ -53,11 +53,16 @@ public class MySavings extends JFrame {
 			}
 		});
 	}
+	public static String roundOffTo2DecPlaces(Double val)
+	{
+	    return String.format("%.2f", val);
+	}
 
 	/**
 	 * Create the frame.
 	 */
 	public MySavings() {
+		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
@@ -75,7 +80,7 @@ public class MySavings extends JFrame {
 		ql.setBounds(5, 25, 100,20);
 		panel.add(ql);
 		
-		JTextField qt = new JTextField();
+		JTextField qt = new JTextField("0");
 		qt.setForeground(Color.BLACK);
 		qt.setBounds(27,50, 50, 20);
 		panel.add(qt);
@@ -85,7 +90,7 @@ public class MySavings extends JFrame {
 		dl.setBounds(115, 25, 100,20);
 		panel.add(dl);
 		
-		JTextField dt = new JTextField();
+		JTextField dt = new JTextField("0");
 		dt.setForeground(Color.BLACK);
 		dt.setBounds(125, 50, 50, 20);
 		panel.add(dt);
@@ -95,7 +100,7 @@ public class MySavings extends JFrame {
 		nl.setBounds(205, 25, 100,20);
 		panel.add(nl);
 		
-		JTextField nt = new JTextField();
+		JTextField nt = new JTextField("0");
 		nt.setForeground(Color.BLACK);
 		nt.setBounds(215, 50, 50, 20);
 		panel.add(nt);
@@ -105,7 +110,7 @@ public class MySavings extends JFrame {
 		pl.setBounds(305, 25, 100,20);
 		panel.add(pl);
 		
-		JTextField pt = new JTextField();
+		JTextField pt = new JTextField("0");
 		pt.setForeground(Color.BLACK);
 		pt.setBounds(325, 50, 50, 20);
 		panel.add(pt);
@@ -115,7 +120,7 @@ public class MySavings extends JFrame {
 		total.setBounds(40, 107, 100,70);
 		panel.add(total);
 		
-		JLabel num = new JLabel("0.00");
+		JLabel num = new JLabel("$0.00");
 		num.setFont(new Font("Tahoma", Font.BOLD, 30));
 		num.setBounds(40, 156, 100,70);
 		panel.add(num);
@@ -139,10 +144,15 @@ public class MySavings extends JFrame {
 				Double tnn = nn*0.05;
 				Double tpn = pn*0.01;
 				
-				Double total= tqn+tdn+tnn+tpn;
-				String totals = Double.toString(total);
+				Total= Total+tqn+tdn+tnn+tpn;
+				String totals="$"+roundOffTo2DecPlaces(Total);
+				
 				
 				num.setText(totals);
+				qt.setText("0");
+				dt.setText("0");
+				nt.setText("0");
+				pt.setText("0");
 			}
 		});
 		add.setBounds(309, 129, 89, 43);
@@ -177,10 +187,20 @@ public class MySavings extends JFrame {
 		remove.setBounds(209, 129, 89, 43);
 		panel.add(remove);
 		
-		
-		
-		
-		
+		JButton clear = new JButton("Clear");
+		clear.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				num.setText("0.00");
+				qt.setText("0");
+				dt.setText("0");
+				nt.setText("0");
+				pt.setText("0");
+				
+			}
+			
+		});
+		clear.setBounds(259, 179, 89, 43);
+		panel.add(clear);
 		
 	}
 }
