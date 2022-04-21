@@ -120,9 +120,10 @@ public class MySavings extends JFrame {
 		total.setBounds(40, 107, 100,70);
 		panel.add(total);
 		
+		
 		JLabel num = new JLabel("$0.00");
 		num.setFont(new Font("Tahoma", Font.BOLD, 30));
-		num.setBounds(40, 156, 100,70);
+		num.setBounds(40, 156, 200,70);
 		panel.add(num);
 		
 		
@@ -195,12 +196,13 @@ public class MySavings extends JFrame {
 		JButton clear = new JButton("Clear");
 		clear.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				num.setText("0.00");
+				num.setText("$0.00");
 				qt.setText("0");
 				dt.setText("0");
 				nt.setText("0");
 				pt.setText("0");
-				
+				Total=0.00;
+				String totals= "$"+ Total;
 			}
 			
 		});
