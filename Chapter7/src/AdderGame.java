@@ -20,7 +20,7 @@ public class AdderGame {
 	
 	public static void Scoring() {
 		
-		score++;
+		score=score+3;
 		System.out.println("Points: "+score);
 	}
 	 public static void Scoringminus() {
@@ -67,7 +67,7 @@ public class AdderGame {
 }
 /* Screen Dump
 
-Welcome to the Adder Game! You must add the 2 random integers to be awarded 1 point.
+Welcome to the Adder Game! You must add the 2 random integers to be awarded 3 points.
 If you get it wrong, you will lose one point! Enter 999 to quit playing!
 6+3=9
 You are Correct!
