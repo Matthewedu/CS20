@@ -35,7 +35,7 @@ public class AdderGame {
     
   	Scanner input = new Scanner(System.in);
   	
-  	System.out.println("Welcome to the Adder Game! You must add the 2 random integers to be awarded 1 point.");
+  	System.out.println("Welcome to the Adder Game! You must add the 2 random integers to be awarded 3 points.");
   	System.out.println("If you get it wrong, you will lose one point! Enter 999 to quit playing!");
     while(m==0) {
     	
@@ -69,20 +69,17 @@ public class AdderGame {
 
 Welcome to the Adder Game! You must add the 2 random integers to be awarded 3 points.
 If you get it wrong, you will lose one point! Enter 999 to quit playing!
-6+3=9
-You are Correct!
-Points: 1
-14+11=25
-You are Correct!
-Points: 2
-14+14=28
+18+1=19
 You are Correct!
 Points: 3
-8+12=5
-You are Incorrect! The correct answer is: 20
-Points: 2
-8+19=999
-Thanks For Playing! Total Points: 2
+12+12=24
+You are Correct!
+Points: 6
+3+8=9
+You are Incorrect! The correct answer is: 11
+Points: 5
+8+13=999
+Thanks For Playing! Total Points: 5
 
 
 */
