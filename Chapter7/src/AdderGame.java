@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 /*
 
-Program: AdderGame.java          Last Date of this Revision: April 19 2022
+Program: AdderGame.java          Last Date of this Revision: April 25 2022
 
 Purpose: Create an application where the user guesses the answer to an additon problem, 
 awarding points for guessing it in the least amount of tries and minusing points if incorrect.
