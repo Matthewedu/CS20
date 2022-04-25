@@ -6,7 +6,7 @@ Program: AdderGame.java          Last Date of this Revision: April 19 2022
 
 Purpose: Create an application where the user guesses the answer to an additon problem, 
 awarding points for guessing it in the least amount of tries and minusing points if incorrect.
-To end, type 999 to end the game ad find total score. 
+To end, type 999 to end the game and find total score. 
 
 Author: Matthew Pierson
 School: CHHS
