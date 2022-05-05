@@ -1,4 +1,4 @@
-import java.util.Scanner;
+
 
 /*
 
@@ -14,24 +14,18 @@ Course: Computer Programming 20
  
 
 */
-public class AdderGame {
-	
-	 static int score=0;
-	
-	public static void Scoring() {
-		
-		score=score+3;
-		System.out.println("Points: "+score);
-	}
-	 public static void Scoringminus() {
-		 score--;
-		 System.out.println("Points: "+score);
-	 }
-	
-	
-    public static void main (String [] args){
-    
+
+package Adder;
+import java.util.Scanner;
+
+public class AdderGame extends Score {  
+
+    public static void main (String [] args) 
+    {
+
     	int m=0; 
+    
+AdderGame link= new AdderGame();
     
   	Scanner input = new Scanner(System.in);
   	
@@ -50,19 +44,18 @@ public class AdderGame {
     
     	if(num==t) {
     System.out.println("You are Correct!");
-    Scoring();
+    link.Scores();
     
     	}else if(num==999) {
     m=1;
     	
     	}else {
     System.out.println("You are Incorrect! The correct answer is: "+ t);
-    Scoringminus();
+    link.Scoreminus();
     	}
-    
-    	
+  
     }
-    System.out.println("Thanks For Playing! Total Points: "+score);
+    link.Total();
    }
 }
 /* Screen Dump
@@ -83,3 +76,4 @@ Thanks For Playing! Total Points: 5
 
 
 */
+
