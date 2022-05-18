@@ -207,6 +207,5 @@ public class MySavings extends JFrame {
 		});
 		clear.setBounds(259, 179, 89, 43);
 		panel.add(clear);
-		
 	}
 }
