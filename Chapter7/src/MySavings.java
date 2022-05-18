@@ -126,7 +126,6 @@ public class MySavings extends JFrame {
 		num.setBounds(40, 156, 200,70);
 		panel.add(num);
 		
-		
 		JButton add = new JButton("Add");
 		add.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
