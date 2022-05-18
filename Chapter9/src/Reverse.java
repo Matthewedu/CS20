@@ -12,7 +12,7 @@ public class Reverse {
 			numbers[i]= i;
 			
 		}
-		//display numbers
+		//display numbers 12345
 		System.out.println("Countdown");
 		
 		for(int i=num_elements-1; i>=0; i--) 
