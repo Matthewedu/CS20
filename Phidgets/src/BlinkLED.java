@@ -1,4 +1,15 @@
+/*
 
+Program: BlinkLED.java          Last Date of this Revision: May 24 2022
+
+Purpose: Make the red(and green) LED blink.
+
+Author: Matthew Pierson
+School: CHHS
+Course: Computer Programming 20
+ 
+
+*/
 
 //Add Phidgets Library
 import com.phidget22.*;
@@ -10,7 +21,7 @@ public class BlinkLED {
         //Create 
         DigitalOutput redLED = new DigitalOutput();
 
-        //Address 
+        //Address (4 is for green LED)
         redLED.setHubPort(1);
         redLED.setIsHubPortDevice(true);
 
@@ -19,7 +30,7 @@ public class BlinkLED {
 
         //Use your Phidgets 
         while(true){
-            redLED.setState(true);
+        	redLED.setState(true);
             Thread.sleep(1000);
             redLED.setState(false);
             Thread.sleep(1000);
