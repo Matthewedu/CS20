@@ -14,12 +14,15 @@ public class ReadButton {
 		//Open
 		redButton.open(1000);
 		
+		int score=0;
 		//Use
 		 while(true){
-	            //System.out.println("Button State: " + redButton.getState());
-	            Thread.sleep(250);
-			 if( redButton.getState()){
+	            
+	            Thread.sleep(50);
+			 if(redButton.getState()){
 				 System.out.println("Button State: " + redButton.getState());
+				 score++;
+				 System.out.println(score);
 			 } 
 	        }
 			
