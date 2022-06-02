@@ -3,8 +3,10 @@ import java.util.Scanner;
 
 import com.phidget22.*;
 
+
 public class Themostat {
 
+	
 	public static void main(String[] args) throws Exception 
 	{
 		Scanner input = new Scanner(System.in);
@@ -37,22 +39,27 @@ public class Themostat {
 	    System.out.println("Pick a temperature for your home (21°C+)");
 	    double tempinput = input.nextDouble();
 	    
+	    double printTemp = 10;
+	    
 	    double temp = temperatureSensor.getTemperature();
 	    
 	    while (true) 
 	    {
-	    	Thread.sleep(10000);
+	    	
+	    	Thread.sleep(200);
 	    	
 	    	if(greenButton.getState()) 
 	    	{
+	    		//System.out.println("green");
 	    		tempinput++;
 	    	}else if (redButton.getState()) 
 	    	{
+	    		//System.out.println("red");
 	    		tempinput--;
 	    	}
 	    	
-	    	//need to fix this!
-	    	if(tempinput+2 <temp && temp<tempinput-2) 
+	    	
+	    	if(tempinput-2 <temp && temp<tempinput+2) 
 	    	{
 	    		greenLED.setState(true);
 	    		redLED.setState(false);
@@ -62,8 +69,16 @@ public class Themostat {
 	    		redLED.setState(true);
 	    	}
 	    	
-	    	System.out.print("Set Temperature: "+ tempinput + "°C");
-	    	System.out.println("Actual Temperature: " + temp +"°C");
+	    	//Display
+	    	if(printTemp >= 10)
+	    	{
+	    		System.out.print("Set Temperature: "+ tempinput + "°C ");
+		    	System.out.println("Actual Temperature: " + temp +"°C");
+		    	printTemp = 0;
+	    	}
+	    	
+	    	printTemp = printTemp + 0.2;
+	    	
 	    }
 
 	}
