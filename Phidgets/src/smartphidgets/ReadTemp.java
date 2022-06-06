@@ -28,7 +28,9 @@ public class ReadTemp {
 	            System.out.println("Temperature (°C): " + temperatureSensor.getTemperature() + " °C" );
 	            double temp = temperatureSensor.getTemperature();
 	            temp= (temp*1.8)+32;
-	            System.out.println("Temperature (°F): " + temp + " °F" );
+	            double round = Math.round(temp*100)/100;
+	            
+	            System.out.println("Temperature (°F): " + round + " °F" );
 	            Thread.sleep(1000);
 	        }
 	}

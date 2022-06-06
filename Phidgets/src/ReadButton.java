@@ -29,7 +29,7 @@ public class ReadButton {
 		//Use
 		 while(true){
 	            
-	            Thread.sleep(50);
+	            Thread.sleep(180);
 			 if(redButton.getState()){
 				 System.out.println("Button State: " + redButton.getState());
 				 score++;
