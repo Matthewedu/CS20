@@ -1,4 +1,16 @@
-import com.phidget22.*;
+/*
+
+Program: TugofWar.java          Last Date of this Revision: May 25 2022
+
+Purpose: Make a game where 2 people press on the green or red button and try and get to 10 clicks.
+When someone wins, flash both lights then the winner of the games colour.
+
+Author: Matthew Pierson
+School: CHHS
+Course: Computer Programming 20
+ 
+
+*/import com.phidget22.*;
 public class TugofWar {
 
 	public static void main(String[] args) throws Exception {

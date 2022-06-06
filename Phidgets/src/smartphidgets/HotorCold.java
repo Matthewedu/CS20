@@ -1,4 +1,17 @@
-package smartphidgets;
+/*
+
+Program: HotorCold.java          Last Date of this Revision: May 26 2022
+
+Purpose: Create a program where if the temperature is between 20-24 degrees
+celsius it will turn on the green LED, if its not between this range turn
+on the Red LED.
+
+Author: Matthew Pierson
+School: CHHS
+Course: Computer Programming 20
+ 
+
+*/package smartphidgets;
 import com.phidget22.*;
 public class HotorCold {
 

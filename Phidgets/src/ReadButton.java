@@ -1,4 +1,15 @@
-import com.phidget22.*;
+/*
+
+Program: ReadButton.java          Last Date of this Revision: May 24 2022
+
+Purpose: Read if the red button is pressed.
+
+Author: Matthew Pierson
+School: CHHS
+Course: Computer Programming 20
+ 
+
+*/import com.phidget22.*;
 
 public class ReadButton {
 

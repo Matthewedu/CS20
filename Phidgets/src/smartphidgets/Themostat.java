@@ -1,3 +1,16 @@
+/*
+
+Program: Themostat.java          Last Date of this Revision: May 31 2022
+
+Purpose: Create a program that acts like a thermostat where you input a temperature
+then turn on an LED whether its in a range of temperature.
+
+Author: Matthew Pierson
+School: CHHS
+Course: Computer Programming 20
+ 
+
+*/
 package smartphidgets;
 import java.util.Scanner;
 

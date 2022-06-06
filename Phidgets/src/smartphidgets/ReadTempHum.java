@@ -1,3 +1,15 @@
+/*
+
+Program: ReadTempHum.java          Last Date of this Revision: May 26 2022
+
+Purpose: Write a program that gets temperature and humdidity data.
+
+Author: Matthew Pierson
+School: CHHS
+Course: Computer Programming 20
+ 
+
+*/
 package smartphidgets;
 import com.phidget22.*;
 public class ReadTempHum {

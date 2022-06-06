@@ -1,3 +1,15 @@
+/*
+
+Program: ReadTemp.java          Last Date of this Revision: May 26 2022
+
+Purpose: Write a program that gets data from the temperature sensor.
+
+Author: Matthew Pierson
+School: CHHS
+Course: Computer Programming 20
+ 
+
+*/
 package smartphidgets;
 import com.phidget22.*;
 

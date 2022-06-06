@@ -1,3 +1,15 @@
+/*
+
+Program: ButtonandLED.java          Last Date of this Revision: May 24 2022
+
+Purpose: Make the red (and green) LED turn on when pressed by its coresponding buttons.
+
+Author: Matthew Pierson
+School: CHHS
+Course: Computer Programming 20
+ 
+
+*/
 import com.phidget22.*;
 
 public class ButtonandLED {
